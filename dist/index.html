@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://anatol.com/wp-content/themes/anatol/images/favicon.ico">
-    <link rel="stylesheet" href="css/style.min.css">
+     <link rel="stylesheet" href="css/style.min.css">
     <title>Anatol</title>
 </head>
 <body>
@@ -19,13 +19,13 @@
                     <img src="icons/logo.svg" alt="logo">
                 </figure>
             </div>
-            <div class="header__nav">
-                <div class="hamburger">
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
-                </div>
+            <div class="close js-close">&times;</div>
+            <div id="js-hamburger" class="hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
             </div>
+            
             <!-- <div class="header__btn">
                 <button class="btn btn__header">
                     <span>Get a Quote</span>
@@ -33,5 +33,275 @@
             </div> -->
         </div>
     </header>
+    <nav id="js-navigation" class="navigation">
+        <ul>
+            <li class="navigation__item">
+                <a href="#">who we are</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#">equipment</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#">roi calculator</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#">where to buy</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#">parts store</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#">support</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#">contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="quote">
+        <h1 class="quote__title">
+            Contact us today to learn how you can join the all-electric screen printing revolution  
+        </h1>
+        <form class="quote__form">
+            <input type="text" placeholder="First Name*">
+            <input type="text" placeholder="Last Name*">
+            <input type="text" placeholder="Phone Number*">
+            <input type="text" placeholder="Email*">
+            <input type="text" placeholder="Company Name">
+            <input type="text" placeholder="Select Country*">
+            <textarea name="" id="" cols="33" rows="5" placeholder="Additional Info"></textarea>
+            <button class="btn btn__form">
+                <span>Get a Quote</span>
+            </button>
+        </form>
+    </section>
+    <section class="two-count">
+        <div class="blog">
+            <h2 class="title">
+                Latest from the blog
+            </h2>
+            <p class="subtitle">Screen printing news, articles & events</p>
+                <div class="slider">
+                    <div class="slider__items one-time">
+                        <div class="slider__item">
+                            <figure>
+                                <img src="images/slider/1-6.webp" alt="first slider image">
+                            </figure>
+                            <p class="slider__item-title">
+                                Screen printing that pops: getting started with glitter inks 
+                            </p>
+                            <button class="btn btn__slider">
+                                <span>Read more</span>
+                            </button>
+                        </div>
+                        <div class="slider__item">
+                            <figure>
+                                <img src="images/slider/2.webp" alt="first slider image">
+                            </figure>
+                            <p class="slider__item-title">
+                                Screen printing that pops: getting started with glitter inks 
+                            </p>
+                            <button class="btn btn__slider">
+                                <span>Read more</span>
+                            </button>
+                        </div>
+                        <div class="slider__item">
+                            <figure>
+                                <img src="images/slider/3.webp" alt="first slider image">
+                            </figure>
+                            <p class="slider__item-title">
+                                Screen printing that pops: getting started with glitter inks 
+                            </p>
+                            <button class="btn btn__slider">
+                                <span>Read more</span>
+                            </button>
+                        </div>
+                        <div class="slider__item">
+                            <figure>
+                                <img src="images/slider/4.webp" alt="first slider image">
+                            </figure>
+                            <p class="slider__item-title">
+                                Screen printing that pops: getting started with glitter inks 
+                            </p>
+                            <button class="btn btn__slider">
+                                <span>Read more</span>
+                            </button>
+                        </div>
+                        <div class="slider__item">
+                            <figure>
+                                <img src="images/slider/5.webp" alt="first slider image">
+                            </figure>
+                            <p class="slider__item-title">
+                                Screen printing that pops: getting started with glitter inks 
+                            </p>
+                            <button class="btn btn__slider">
+                                <span>Read more</span>
+                            </button>
+                        </div>
+                        <div class="slider__item">
+                            <figure>
+                                <img src="images/slider/1-6.webp" alt="first slider image">
+                            </figure>
+                            <p class="slider__item-title">
+                                Screen printing that pops: getting started with glitter inks 
+                            </p>
+                            <button class="btn btn__slider">
+                                <span>Read more</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div class="slider__pagination">
+                        <span class="slider__pagination-line"></span>
+                        <span class="slider__pagination-line"></span>
+                        <span class="slider__pagination-line"></span>
+                        <span class="slider__pagination-line"></span>
+                        <span class="slider__pagination-line"></span>
+                        <span class="slider__pagination-line"></span>
+                    </div> -->
+                </div>
+        </div>
+        <div class="feedback">
+            <h2 class="title">
+                Testimonials
+            </h2>
+            <p class="subtitle">what company customers are saying</p>
+            <div class="feedback__items">
+                <div class="feedback__item">
+                    <figure>
+                        <svg class="mark">
+                            <use xlink:href="icons/sprite.svg#mark"></use>
+                        </svg>
+                    </figure>
+                    <div class="feedback__info">
+                        <h4>
+                            Mike Garber
+                        </h4>
+                        <p>
+                            Anatol Service was very prompt, helpful and professional. 
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <figure>
+                        <svg class="mark">
+                            <use xlink:href="icons/sprite.svg#mark"></use>
+                        </svg>
+                    </figure>
+                    <div class="feedback__info">
+                        <h4>
+                            Chris Slivar
+                        </h4>
+                        <p>
+                            Anatol delivered prompt attention and care in helping out.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <figure>
+                        <svg class="mark">
+                            <use xlink:href="icons/sprite.svg#mark"></use>
+                        </svg>
+                    </figure>
+                    <div class="feedback__info">
+                        <h4>
+                            Arianna Concepcion
+                        </h4>
+                        <p>
+                            I recommend Anatol based on the attention and speed of the service and shipping. Thanks! 
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <figure>
+                        <svg class="mark">
+                            <use xlink:href="icons/sprite.svg#mark"></use>
+                        </svg>
+                    </figure>
+                    <div class="feedback__info">
+                        <h4>
+                            Pedram Vatania
+                        </h4>
+                        <p>
+                            High quality service and prompt response!
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <figure>
+                        <svg class="mark">
+                            <use xlink:href="icons/sprite.svg#mark"></use>
+                        </svg>
+                    </figure>
+                    <div class="feedback__info">
+                        <h4>
+                            Jana Lyons
+                        </h4>
+                        <p>
+                            Everyone at Anatol that I had contact with was very helpful and patient. This was a major purchase that took a lot of time and logistics to deal with before the machine could be shipped. My Anatol representatives answered all my questions and concerns. The technician was awesome when he came for installation. He was very knowledgeable and is an excellent teacher. Very patient and thorough. Thanks so much all.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn__feedback">
+                <span>Customers stories</span>
+            </button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__items">
+            <div class="footer__item">
+                <ul class="footer__contacts">
+                    <li>919 Sherwood Drive</li>
+                    <li>Lakee Bluff, IL 60044, USA</li>
+                    <li>Phone: <a href="tel:847-367-9760">847-367-9760</a></li>
+                    <li>Service: <a href="tel:847-582-1825">847-582-1825</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <figure class="footer__logo">
+                    <img src="icons/logo.svg" alt="logo">
+                </figure>
+                <div class="footer__social">
+                    <figure>
+                        <svg class="facebook">
+                            <use xlink:href="icons/sprite.svg#facebook"></use>
+                        </svg>
+                    </figure>
+                    <figure>
+                        <svg class="instagram">
+                            <use xlink:href="icons/sprite.svg#instagram"></use>
+                        </svg>
+                    </figure>
+                    <figure>
+                        <svg class="linkedin">
+                            <use xlink:href="icons/sprite.svg#linkedin"></use>
+                        </svg>
+                    </figure>
+                    <figure>
+                        <svg class="twitter">
+                            <use xlink:href="icons/sprite.svg#twitter"></use>
+                        </svg>
+                    </figure>
+                    <figure>
+                        <svg class="youtube">
+                            <use xlink:href="icons/sprite.svg#youtube"></use>
+                        </svg>
+                    </figure>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__btns">
+                    <button class="btn btn__footer"><span>Learn more</span></button>
+                    <button class="btn btn__footer"><span>where to buy</span></button>
+                </div>
+            </div>
+        </div>
+        <p>© 2018-2022 Anatol Equipment Manufacturing Co. All Rights Reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 </html>
