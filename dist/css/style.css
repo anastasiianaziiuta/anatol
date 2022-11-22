@@ -428,7 +428,7 @@ a {
   width: 15px;
   height: 5px;
   font-family: "slick";
-  font-size: 72px;
+  font-size: 60px;
   line-height: 20px;
   text-align: center;
   color: #ab1a1f;
@@ -439,6 +439,7 @@ a {
 .slick-dots li.slick-active button:before {
   color: #ab1a1f;
   opacity: 0.75;
+  font-size: 72px;
 }
 
 .slider {
