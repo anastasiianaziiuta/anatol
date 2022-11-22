@@ -50,7 +50,7 @@ a {
   margin-top: 5px;
   width: 70%;
 }
-.btn__slider, .btn__feedback {
+.btn__slider, .btn__feedback, .btn__blog {
   margin: 10px auto;
 }
 .btn__footer {
@@ -78,6 +78,9 @@ a {
 }
 .header__logo img {
   width: 100%;
+}
+.header__btn {
+  display: none;
 }
 
 .hamburger {
@@ -401,8 +404,9 @@ a {
   border: 0;
   background: transparent;
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 5px;
+  width: 15px;
+  border-radius: 3px;
   outline: none;
   line-height: 0px;
   font-size: 0px;
@@ -420,20 +424,20 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  content: "•";
-  width: 20px;
-  height: 20px;
+  content: "-";
+  width: 15px;
+  height: 5px;
   font-family: "slick";
-  font-size: 6px;
+  font-size: 72px;
   line-height: 20px;
   text-align: center;
-  color: black;
+  color: #ab1a1f;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  color: black;
+  color: #ab1a1f;
   opacity: 0.75;
 }
 
@@ -509,4 +513,95 @@ a {
 .footer p {
   font-size: 12px;
   text-align: center;
+}
+
+@media (min-width: 425px) {
+  .quote__form input {
+    width: 43%;
+  }
+  .quote__form textarea {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .header__logo {
+    width: 25%;
+  }
+  .header__btn {
+    display: block;
+    align-self: center;
+  }
+  .hamburger__line {
+    width: 40px;
+  }
+  .hamburger__line:nth-child(1) {
+    width: 20px;
+  }
+  .hamburger__line:nth-child(3) {
+    width: 20px;
+  }
+  .quote__form {
+    width: 75%;
+    margin: 5px auto;
+  }
+  .quote__form input {
+    width: 45%;
+    margin: 3px;
+    outline-color: #ab1a1f;
+    opacity: 0.6;
+  }
+  .quote__form textarea {
+    outline-color: #ab1a1f;
+    opacity: 0.6;
+    width: 93%;
+  }
+  .footer__items {
+    display: flex;
+  }
+  .footer__item a {
+    width: 50%;
+    align-self: center;
+  }
+  .footer__btns {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .quote__title {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .quote__form {
+    width: 50%;
+    margin: 5px auto;
+  }
+  .quote__form input {
+    width: 45%;
+    margin: 3px;
+    outline-color: #ab1a1f;
+    opacity: 0.6;
+  }
+  .quote__form textarea {
+    outline-color: #ab1a1f;
+    opacity: 0.6;
+    width: 93%;
+  }
+  .two-count {
+    display: flex;
+    justify-content: space-around;
+  }
+  .blog {
+    padding: 20px;
+    width: 45%;
+  }
+  .slider {
+    margin: 20px 0;
+  }
+  .feedback {
+    padding: 20px;
+    width: 45%;
+  }
+  .footer__items {
+    justify-content: space-around;
+  }
 }
