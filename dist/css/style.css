@@ -45,6 +45,7 @@ a {
   border-radius: 5px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .btn__form {
   margin-top: 5px;
